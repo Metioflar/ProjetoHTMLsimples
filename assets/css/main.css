@@ -1,0 +1,149 @@
+/* pode fazer classes ou id --- Fonte Montserrat */
+/*---------head-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+:root{
+    --montserrat:"Montserrat";
+    --verm1: #940533;
+    --verm2: #c0012a;
+    --verm3: #f5061d; 
+    --verm4: #ff8800;
+    --Amarelo: #F5CE72;
+    --Preto: #061013;
+
+}
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    padding: 0px;
+    background-color: var(--Preto);
+    margin-bottom: 0px;
+}
+.menu-nav li{
+    padding: 20px;
+    cursor: pointer;
+}
+.menu-nav li:hover{
+    background-color: var(--verm1);
+}
+.menu-nav li a{
+    text-decoration: none;
+    font-family: var(--montserrat);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Amarelo);
+}
+/* OPA TOPO AQUI */
+
+.bg-image{
+    height: 250px;
+    background-image: url('../img/1500x500.jfif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+/*----------sobre----------*/
+.Sobre{
+    background-color: #061013;
+}
+.Sobre h1{
+    font-family: var(--montserrat);
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    color: #F5CE72;
+    margin-top: 30px;
+}
+.Sobre p{
+    font-family: var(--montserrat);
+    color: #F5CE72;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 30px;
+    display: block;
+    width: 850px;
+    text-align: center;
+    margin: 50px auto;
+}
+/*---------h2-----------*/
+.contato{
+    background-color: #F5CE72;
+}
+.contato form{
+    display: block;
+    width: 400px;
+    margin: 50px auto;
+}
+.contato label{
+    font-family: var(--montserrat);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contato input{
+    font-family: var(--montserrat);
+    font-size: 16px;
+    background-color: beige;
+    border: 1px solid beige;
+    margin-bottom: 10px;
+}
+.contato input:focus{
+    background-color: beige;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid beige
+}
+.contato h2{
+    font-family: var(--montserrat);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contato button{
+    font-family: var(--montserrat);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+.contato textarea{
+    background-color: beige;
+    border: 1px solid beige
+}
+.contato textarea:focus{
+    background-color: beige;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid beige
+
+}
+/*---------rodapé-----------*/
+.rodape {
+    background-color: #F5CE72
+}
+.rodape footer{
+
+}
+.rodape footer ul{
+    list-style: none;
+    padding: 0;
+    float: left
+}
+.rodape footer ul li img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.rodape footer p{
+    float: right;
+    margin: 30px;
+    font-family: var(--montserrat);
+    color: #061013;
+    
+}
