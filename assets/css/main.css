@@ -21,6 +21,7 @@
     padding: 0px;
     background-color: var(--Preto);
     margin-bottom: 0px;
+    position: relative;
 }
 .menu-nav li{
     padding: 20px;
@@ -28,6 +29,48 @@
 }
 .menu-nav li:hover{
     background-color: var(--verm1);
+}
+.submenu{
+    width: 30px;
+    height: 30px;
+}
+.itens-submenu{
+    position:absolute;
+    width: 300px;
+    background-color: var(--verm1);
+    height: 100%;
+    transform: translateX(-100%);
+    padding: 30px;
+    transition: 1s;
+}
+.itens-submenu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.itens-submenu ul li{
+    margin-bottom: 20px;
+}
+.itens-submenu ul li a{
+    font-family: var(--montserrat);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Preto);
+    text-decoration: none;
+}
+.fechar img{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.menu-nav li:nth-of-type(4){
+    flex-grow: 2;
+}
+.menu-nav li:nth-of-type(4):hover{
+    background-color: var(--Preto);
+    cursor: auto;
 }
 .menu-nav li a{
     text-decoration: none;
