@@ -9,7 +9,8 @@
     --verm3: #f5061d; 
     --verm4: #ff8800;
     --Amarelo: #F5CE72;
-    --Preto: #061013;
+    --Preto: #020001;
+    --fundoNav: #ffbb00;
 
 }
 .menu-nav{
@@ -37,7 +38,7 @@
 .itens-submenu{
     position:absolute;
     width: 300px;
-    background-color: var(--verm1);
+    background-color: var(--fundoNav);
     height: 100%;
     transform: translateX(-100%);
     padding: 30px;
@@ -55,8 +56,14 @@
     font-family: var(--montserrat);
     font-size: 20px;
     font-weight: 600;
-    color: var(--Preto);
+    color: var(--preto);
     text-decoration: none;
+}
+.itens-submenu a:hover{
+    display: flex;
+    background-image:linear-gradient(to left, rgba(255, 0, 0, 0), rgb(245, 195, 114));
+    opacity: 0.9;
+    transition: 1s;
 }
 .fechar img{
     float: right;
@@ -83,26 +90,26 @@
 
 .bg-image{
     height: 250px;
-    background-image: url('../img/1500x500.jfif');
+    background-image: url('./1500x500.jfif');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
 }
 /*----------sobre----------*/
 .Sobre{
-    background-color: #061013;
+    background-color: var(--Preto);
 }
 .Sobre h1{
     font-family: var(--montserrat);
     font-size: 72px;
     font-weight: 400;
     text-align: center;
-    color: #F5CE72;
+    color: var(--Amarelo);
     margin-top: 30px;
 }
 .Sobre p{
     font-family: var(--montserrat);
-    color: #F5CE72;
+    color: var(--Amarelo);
     font-size: 18px;
     font-weight: 600;
     margin-top: 20px;
@@ -112,11 +119,16 @@
     text-align: center;
     margin: 50px auto;
 }
+/*---------inscricao-----*/
+#inscricao{
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(245, 195, 114));
+}
 /*---------h2-----------*/
 .contato{
-    background-color: #F5CE72;
+    background-color: var(--Amarelo);
 }
 .contato form{
+    color: #F5CE72;
     display: block;
     width: 400px;
     margin: 50px auto;
@@ -129,18 +141,19 @@
 .contato input{
     font-family: var(--montserrat);
     font-size: 16px;
-    background-color: beige;
-    border: 1px solid beige;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 .contato input:focus{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     box-shadow: none;
     outline: none;
-    border: 1px solid beige
+    border: 1px solid rgb(255, 255, 255)
 }
 .contato h2{
     font-family: var(--montserrat);
+    color: #F5CE72;
     font-size: 50px;
     text-align: center;
     font-weight: 400;
@@ -156,23 +169,21 @@
     width: 100%;
 }
 .contato textarea{
-    background-color: beige;
-    border: 1px solid beige
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255)
 }
 .contato textarea:focus{
     background-color: beige;
     box-shadow: none;
     outline: none;
-    border: 1px solid beige
+    border: 1px solid rgb(255, 255, 255)
 
 }
 /*---------rodapé-----------*/
 .rodape {
-    background-color: #F5CE72
+    background-image: linear-gradient(360deg, rgba(217, 159, 0, 0.282), rgb(245, 195, 114))
 }
-.rodape footer{
 
-}
 .rodape footer ul{
     list-style: none;
     padding: 0;
@@ -187,6 +198,6 @@
     float: right;
     margin: 30px;
     font-family: var(--montserrat);
-    color: #061013;
+    color: var(--Preto);
     
 }
