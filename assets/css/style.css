@@ -90,7 +90,7 @@
 
 .bg-image{
     height: 250px;
-    background-image: url('./1500x500.jfif');
+    background-image: url('../img/1500x500.jfif');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
