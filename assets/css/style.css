@@ -1,7 +1,11 @@
 /* pode fazer classes ou id --- Fonte Montserrat */
 /*---------head-----------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
 :root{
     --montserrat:"Montserrat";
     --verm1: #940533;
@@ -11,7 +15,10 @@
     --Amarelo: #F5CE72;
     --Preto: #020001;
     --fundoNav: #ffbb00;
-
+}
+body{
+    width: 100vw;
+    height: 100vw;
 }
 .menu-nav{
     display: flex;
@@ -119,6 +126,31 @@
     text-align: center;
     margin: 50px auto;
 }
+/*---------cards---------*/
+.container{
+    grid-template-rows: auto;
+}
+#objeto1{
+    grid-row: auto;    
+    display: inline-grid;
+    flex-direction: row;
+    align-content: space-evenly;
+    justify-self: stretch;
+}
+ #objeto2{
+    grid-row: auto;    
+    display: inline-grid;
+    flex-direction: row;
+    align-content: space-evenly;
+    justify-self: stretch;
+}
+#objeto3{
+    grid-row: auto;    
+    display: inline-grid;
+    flex-direction: row;
+    align-content: space-evenly;
+    justify-self: stretch;
+}
 /*---------inscricao-----*/
 #inscricao{
     background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(245, 195, 114));
@@ -181,7 +213,8 @@
 }
 /*---------rodapé-----------*/
 .rodape {
-    background-image: linear-gradient(360deg, rgba(217, 159, 0, 0.282), rgb(245, 195, 114))
+ background-image: linear-gradient(360deg, rgba(217, 159, 0, 0.282), rgb(245, 195, 114))
+
 }
 
 .rodape footer ul{
@@ -189,9 +222,15 @@
     padding: 0;
     float: left
 }
-.rodape footer ul li img{
+.rodape img{
+    margin-left: 487px;
     width: 50px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.rodape footer ul li {
+    width: 50px;
+    height: 100vh;
     margin: 20px;
 }
 .rodape footer p{
